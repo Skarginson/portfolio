@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ulysse Lafagne</title>
+    <script src="script.js"></script>
     <style>
         body {
             margin: 0;
@@ -21,12 +23,13 @@
 
         .left-column {
             display: flex;
+
             justify-content: center;
             align-items: center;
             background-color: #f2f2f2;
             padding: 20px;
         }
-        
+
         .photoCv {
             border-radius: 50%;
         }
@@ -40,7 +43,7 @@
             display: flex;
             flex-direction: column;
         }
-        
+
         .right-row {
             display: flex;
             flex: 1;
@@ -51,26 +54,130 @@
             box-sizing: border-box;
             border: 1px solid #ccc;
         }
+
+        /* The side navigation menu */
+        .sidenav {
+            height: 100%;
+            /* 100% Full-height */
+            width: 0;
+            /* 0 width - change this with JavaScript */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Stay on top */
+            top: 0;
+            /* Stay at the top */
+            left: 0;
+            background-color: #111;
+            /* Black*/
+            overflow-x: hidden;
+            /* Disable horizontal scroll */
+            padding-top: 60px;
+            /* Place content 60px from the top */
+            transition: 0.5s;
+            /* 0.5 second transition effect to slide in the sidenav */
+        }
+
+        /* The navigation menu links */
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        /* Position and style the close button (top right corner) */
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
     </style>
-</head>
+
 <body>
-
-    <div class="left-column">
-<!--         <img class="photoCv" src="photo_cv2.jpg" alt="portrait en bulle">
- -->        <p>Votre texte centré</p>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
     </div>
 
-    <div class="right-column">
-        <div class="right-row">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, enim sit amet tincidunt semper, lacus lorem blandit massa, ullamcorper dapibus elit sapien quis orci. Quisque mattis ipsum lacus, vitae efficitur purus euismod a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec purus dui, viverra at viverra sagittis, congue in purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus dapibus ex nec lectus lacinia imperdiet. Proin rhoncus erat est, vitae iaculis orci viverra in. Maecenas tincidunt molestie risus, vitae maximus nibh laoreet eu. </p>
+    <!-- Use any element to open the sidenav -->
+    
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+        <div class="left-column main">
+            <!--         <img class="photoCv" src="photo_cv2.jpg" alt="portrait en bulle">
+            -->
+            <span onclick="openNav()">open</span>
+            <p>Texte centré</p>
         </div>
-        <div class="right-row">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, enim sit amet tincidunt semper, lacus lorem blandit massa, ullamcorper dapibus elit sapien quis orci. Quisque mattis ipsum lacus, vitae efficitur purus euismod a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec purus dui, viverra at viverra sagittis, congue in purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus dapibus ex nec lectus lacinia imperdiet. Proin rhoncus erat est, vitae iaculis orci viverra in. Maecenas tincidunt molestie risus, vitae maximus nibh laoreet eu. </p>
+
+        <div class="right-column main">
+            <div class="right-row main">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, enim sit amet tincidunt
+                    semper,
+                    lacus lorem blandit massa, ullamcorper dapibus elit sapien quis orci. Quisque mattis ipsum lacus,
+                    vitae
+                    efficitur purus euismod a. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                    fames ac
+                    turpis egestas. Donec purus dui, viverra at viverra sagittis, congue in purus. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus dapibus ex nec
+                    lectus
+                    lacinia imperdiet. Proin rhoncus erat est, vitae iaculis orci viverra in. Maecenas tincidunt
+                    molestie
+                    risus, vitae maximus nibh laoreet eu. </p>
+            </div>
+            <div class="right-row main">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, enim sit amet tincidunt
+                    semper,
+                    lacus lorem blandit massa, ullamcorper dapibus elit sapien quis orci. Quisque mattis ipsum lacus,
+                    vitae
+                    efficitur purus euismod a. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                    fames ac
+                    turpis egestas. Donec purus dui, viverra at viverra sagittis, congue in purus. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus dapibus ex nec
+                    lectus
+                    lacinia imperdiet. Proin rhoncus erat est, vitae iaculis orci viverra in. Maecenas tincidunt
+                    molestie
+                    risus, vitae maximus nibh laoreet eu. </p>
+            </div>
+            <div class="right-row main">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, enim sit amet tincidunt
+                    semper,
+                    lacus lorem blandit massa, ullamcorper dapibus elit sapien quis orci. Quisque mattis ipsum lacus,
+                    vitae
+                    efficitur purus euismod a. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                    fames ac
+                    turpis egestas. Donec purus dui, viverra at viverra sagittis, congue in purus. Class aptent taciti
+                    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus dapibus ex nec
+                    lectus
+                    lacinia imperdiet. Proin rhoncus erat est, vitae iaculis orci viverra in. Maecenas tincidunt
+                    molestie
+                    risus, vitae maximus nibh laoreet eu. </p>
+            </div>
         </div>
-        <div class="right-row">
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, enim sit amet tincidunt semper, lacus lorem blandit massa, ullamcorper dapibus elit sapien quis orci. Quisque mattis ipsum lacus, vitae efficitur purus euismod a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec purus dui, viverra at viverra sagittis, congue in purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus dapibus ex nec lectus lacinia imperdiet. Proin rhoncus erat est, vitae iaculis orci viverra in. Maecenas tincidunt molestie risus, vitae maximus nibh laoreet eu. </p>
-        </div>
-    </div>
 
 </body>
+
 </html>
