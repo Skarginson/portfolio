@@ -7,8 +7,17 @@ body {
 }
 
 img {
-    object-fit: cover;
-    object-position: center;
+    display: block;
+    text-align: center;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: auto;
+    height: 100%;
+}
+
+.shrinkToFit {
+    cursor: zoom-in;
 }
 
 .left-column,
@@ -108,7 +117,7 @@ img {
 }
 
 .sidenavText {
-    color:#ccc;
+    color: #ccc;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
