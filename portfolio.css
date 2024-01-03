@@ -6,6 +6,11 @@ body {
     height: 100vh;
 }
 
+img {
+    object-fit: cover;
+    object-position: center;
+}
+
 .left-column,
 .right-column {
     flex: 1;
@@ -14,7 +19,8 @@ body {
 
 .left-column {
     display: flex;
-    flex-direction: column; /* Column so the multiple <p> can be centered */
+    flex-direction: column;
+    /* Column so the multiple <p> can be centered */
     justify-content: center;
     align-items: center;
     background-color: #f2f2f2;
@@ -45,6 +51,7 @@ body {
     box-sizing: border-box;
     border: 1px solid #ccc;
 }
+
 
 /* The side navigation menu */
 .sidenav {
@@ -100,6 +107,10 @@ body {
     left: 10px;
 }
 
+.sidenavText {
+    color:#ccc;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {
@@ -112,15 +123,25 @@ body {
 }
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
@@ -146,18 +167,25 @@ input[type=submit]:hover {
     width: 75%;
     align-content: center;
     justify-content: center;
-} 
+}
 
 #overlay {
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-  }
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
+}
