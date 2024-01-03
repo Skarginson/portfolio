@@ -16,14 +16,17 @@ img {
     height: 100%;
 }
 
+/* Not usable yet, saved for later
 .shrinkToFit {
     cursor: zoom-in;
-}
+} */
 
 .left-column,
 .right-column {
     flex: 1;
     box-sizing: border-box;
+    background-color: #ffff;
+/*     background: linear-gradient(to right, blue, pink); */
 }
 
 .left-column {
@@ -32,7 +35,6 @@ img {
     /* Column so the multiple <p> can be centered */
     justify-content: center;
     align-items: center;
-    background-color: #f2f2f2;
     padding: 20px;
 }
 
@@ -48,18 +50,16 @@ img {
 .right-column {
     display: flex;
     flex-direction: column;
-}
+/*     background-color: #b10e0e; */}
 
 .right-row {
     display: flex;
     flex: 1;
     justify-content: center;
     align-items: center;
-    background-color: #d9d9d9;
     padding: 20px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
-}
+    border: 1px solid #e1ae36;}
 
 
 /* The side navigation menu */
