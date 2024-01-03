@@ -7,6 +7,7 @@
     <title>Ulysse Lafagne</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="portfolio.css">
+
 <body>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -15,31 +16,10 @@
         <a href="#">Clients</a>
         <a href="#">Contact</a>
     </div>
-    <div id="overlay"><p>Test</p>
-        <div class="container">
-            <form action="action_page.php">
-          
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          
-              <label for="country">Country</label>
-              <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-              </select>
-          
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          
-              <input type="submit" value="Submit">
-          
-            </form>
+    <div id="overlay">
+        <p>Test</p>
             <button onclick="overlayOff()">Retour au site</button>
-          </div> 
+        </div>
     </div>
     <div class="left-column">
         <!--         <img class="photoCv" src="photo_cv2.jpg" alt="portrait en bulle"> // Cachez cette tête que je ne saurai voir    -->
@@ -53,13 +33,13 @@
         <div class="right-row">
             <p> Un Blabla sur mon parcours et un lien vers mon CV ? Avec dans un premier temps une prévisualisation d'un
                 PDF avec une anim sympa ? Des icones ? </p>
+            <button onclick="overlayOn()">Turn on overlay effect</button>
         </div>
         <div class="right-row">
             <p> Mes projets actuels</p>
         </div>
         <div class="right-row">
-            <p> Vous voulez en savoir plus ? Bim > 
-            <button onclick="overlayOn()">Turn on overlay effect</button>
+            <p> Vous voulez en savoir plus ? Bim >
             </p>
         </div>
     </div>
