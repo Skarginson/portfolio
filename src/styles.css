@@ -23,6 +23,7 @@ body {
 span {
   font-weight: bold;
 }
+
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -55,22 +56,30 @@ nav ul li a {
 
 section {
   padding: 2rem;
-  font-size: 1rem;
+}
+
+#accueil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 65vh;
 }
 
 #accueil h1 {
+  text-align: justify;
   font-size: 4rem;
 }
 
 #accueil p {
   font-size: 2.5rem;
+  text-align: justify;
 }
 
 #accueil img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  margin: 1rem 0;
+  border-radius: 25%;
+  width: 25rem;
+  margin-right: 7rem;
 }
 
 #accueil ul {
@@ -81,6 +90,11 @@ section {
 #accueil ul li {
   display: inline;
   margin: 0 1rem;
+}
+
+.left-column {
+  margin-left: 3rem;
+  margin-right: 15rem;
 }
 
 #projets ul {
