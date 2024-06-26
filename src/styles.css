@@ -87,6 +87,10 @@ section {
   margin-right: 15rem;
 }
 
+#projets {
+  margin: 1.667vw 20vh;
+}
+
 #projets ul {
   list-style-type: none;
   padding: 0;
