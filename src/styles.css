@@ -135,6 +135,10 @@ section {
   text-align: center;
 }
 
+#cvLink {
+  border-bottom: 2px solid var(--primary-text-color);
+  padding-bottom: 1px;
+}
 footer {
   background-color: var(--background-color);
   padding: 1rem;
@@ -151,4 +155,68 @@ footer a img {
   width: 24px;
   height: 24px;
   margin: 0 0.5rem;
+}
+
+@media (max-width: 768px) {
+  #accueil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #accueil p {
+    font-size: 3.5vh;
+    text-align: justify;
+  }
+
+  #accueil img {
+    border-radius: 25%;
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 20%;
+  }
+
+  #left-column {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #technos {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5vh;
+  }
+
+  #technos ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #technos ul li {
+    margin-bottom: 1.6vh;
+  }
+
+  #technos ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  #projets {
+    margin: 0;
+    font-size: 2vh;
+  }
+
+  #a-propos {
+    margin: 0;
+    font-size: 3.5vh;
+    text-align: justify;
+    margin-bottom: 5vh;
+  }
+
+  #a-propos h2 {
+    font-size: 4.5vh;
+    text-align: center;
+  }
 }
