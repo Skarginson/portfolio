@@ -68,31 +68,21 @@ section {
 
 #accueil h1 {
   text-align: justify;
-  font-size: 4rem;
+  font-size: 6vh;
 }
 
 #accueil p {
-  font-size: 2.5rem;
+  font-size: 3.5vh;
   text-align: justify;
 }
 
 #accueil img {
   border-radius: 25%;
-  width: 25rem;
-  margin-right: 7rem;
+  width: 45%;
+  margin-right: 5%;
 }
 
-#accueil ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#accueil ul li {
-  display: inline;
-  margin: 0 1rem;
-}
-
-.left-column {
+#left-column {
   margin-left: 3rem;
   margin-right: 15rem;
 }
@@ -107,6 +97,27 @@ section {
   margin: 1rem 0;
 }
 
+#technos {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.5vh;
+}
+
+#technos ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+#technos ul li {
+  margin-bottom: 1.6vh;
+}
+
+#technos ul li:last-child {
+  margin-bottom: 0;
+}
+
 footer {
   background-color: var(--background-color);
   padding: 1rem;
@@ -116,7 +127,7 @@ footer {
 }
 
 footer p {
-  margin: 0;
+  margin: 1vh;
 }
 
 footer a img {
