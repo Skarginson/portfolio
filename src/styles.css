@@ -3,7 +3,7 @@
 :root {
   --background-color: #14171e;
   --primary-text-color: #eac556;
-  font-family: "Inter", sans-serif;
+  --primary-font: "Inter", sans-serif;
   font-size: 16px;
 }
 a {
@@ -89,6 +89,7 @@ section {
 
 #projets {
   margin: 1.667vw 20vh;
+  font-size: 2vh;
 }
 
 #projets ul {
@@ -120,6 +121,18 @@ section {
 
 #technos ul li:last-child {
   margin-bottom: 0;
+}
+
+#a-propos {
+  margin: 0 20vh;
+  font-size: 3.5vh;
+  text-align: justify;
+  line-height: 1.3;
+}
+
+#a-propos h2 {
+  font-size: 4.5vh;
+  text-align: center;
 }
 
 footer {
