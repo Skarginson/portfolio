@@ -1,0 +1,23 @@
+name: Deploy to OVH Hosting
+
+on:
+  push:
+    branches:
+      - main # Déclenche le pipeline sur chaque push dans la branche main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./ # Dossier local contenant le site
+          server-dir: /ulysse/ # Répertoire distant sur le serveur
