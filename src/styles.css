@@ -65,11 +65,11 @@ nav ul li a {
 
 #accueil h1 {
   text-align: justify;
-  font-size: 6vh;
+  font-size: 4.5vh;
 }
 
 #accueil p {
-  font-size: 3.5vh;
+  font-size: 2.8vh;
   text-align: justify;
 }
 
@@ -102,7 +102,7 @@ nav ul li a {
 #technos {
   display: flex;
   justify-content: space-around;
-  font-size: 2.5vh;
+  font-size: 2vh;
 }
 
 #technos ul {
@@ -113,7 +113,7 @@ nav ul li a {
 }
 
 #technos ul li {
-  margin-bottom: 3.2vh;
+  margin-bottom: 1.5vh;
 }
 
 #technos ul li:last-child {
@@ -232,5 +232,113 @@ footer a img {
   #a-propos h2 {
     font-size: 4.5vh;
     text-align: center;
+  }
+}
+
+/* ===== PAGE PROJETS ===== */
+#projets {
+  margin: 3vh 8vw 20vh 8vw;
+  font-size: 2vh;
+  text-align: left;
+}
+
+#projets h2 {
+  font-size: 4.5vh;
+  text-align: center;
+  margin-bottom: 4vh;
+}
+
+.projet-categorie {
+  margin-bottom: 5vh;
+}
+
+.projet-categorie h3 {
+  font-size: 2.8vh;
+  border-bottom: 0.15vh solid var(--primary-text-color);
+  padding-bottom: 1vh;
+  margin-bottom: 3vh;
+  opacity: 0.75;
+  letter-spacing: 0.05em;
+}
+
+.projet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(38vw, 1fr));
+  gap: 3vh 3vw;
+}
+
+.projet-card {
+  border: 0.15vh solid var(--primary-text-color);
+  border-radius: 0.8vh;
+  padding: 2.5vh 2.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  transition: background-color 0.2s ease;
+}
+
+.projet-card:hover {
+  background-color: rgba(234, 197, 86, 0.06);
+}
+
+.projet-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.projet-card h4 {
+  font-size: 2.4vh;
+  margin: 0;
+}
+
+.projet-card p {
+  font-size: 2vh;
+  margin: 0;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.projet-note {
+  font-size: 1.7vh !important;
+  opacity: 0.5 !important;
+  font-style: italic;
+}
+
+.projet-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8vh;
+}
+
+.tag {
+  font-size: 1.6vh;
+  border: 0.1vh solid var(--primary-text-color);
+  border-radius: 0.4vh;
+  padding: 0.2vh 0.8vh;
+  opacity: 0.75;
+  font-weight: normal;
+}
+
+.projet-link {
+  font-size: 1.9vh;
+  font-weight: bold;
+  margin-top: auto;
+  align-self: flex-start;
+  border-bottom: 0.15vh solid var(--primary-text-color);
+  padding-bottom: 0.1vh;
+}
+
+@media (max-width: 768px) {
+  #projets {
+    margin: 2vh 4vw 25vh 4vw;
+  }
+
+  .projet-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projet-card {
+    padding: 2.5vh 4vw;
   }
 }
