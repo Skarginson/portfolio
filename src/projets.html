@@ -13,7 +13,7 @@
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="projets.html">Projets</a></li>
         <li><a href="a-propos.html">A propos</a></li>
-        <li><a href="mailto:ulafagne@tutamail.com">Contact</a></li>
+        <li><a href="mailto:ulafagne@gmail.com">Contact</a></li>
       </ul>
     </nav>
 
@@ -26,7 +26,7 @@
 
           <div class="projet-card">
             <div class="projet-header">
-              <h4>Homelab / Infrastructure virtualisée</h4>
+              <h4>Homelab — Infrastructure virtualisée</h4>
               <div class="projet-tags">
                 <span class="tag">Proxmox</span>
                 <span class="tag">Linux</span>
@@ -39,7 +39,7 @@
               et réplication. Monitoring Grafana avec journaux centralisés, sauvegardes
               automatisées, durcissement OS et SSH sécurisé. Veille technique continue.
             </p>
-            <p class="projet-note">Projet local / dépôt privé</p>
+            <p class="projet-note">Projet local — dépôt privé</p>
           </div>
 
           <div class="projet-card">
@@ -56,35 +56,115 @@
               virtuelles : installation de paquets, durcissement SSH, configuration
               réseau, gestion des utilisateurs. Inventaires versionnés sous Git.
             </p>
-            <p class="projet-note">Projet local / dépôt privé</p>
+            <p class="projet-note">Projet local — dépôt privé</p>
           </div>
 
         </div>
       </div>
 
+      
       <div class="projet-categorie">
-        <h3>Projets perso</h3>
+        <h3>Projets scolaires — EPISEN</h3>
         <div class="projet-grid">
 
           <div class="projet-card">
             <div class="projet-header">
-              <h4>alt404 / CLI de candidatures automatisées</h4>
+              <h4>CyberTrust — Gestion de crise cyber</h4>
               <div class="projet-tags">
-                <span class="tag">Python</span>
-                <span class="tag">Claude API</span>
-                <span class="tag">SQLite</span>
-                <span class="tag">LaTeX</span>
+                <span class="tag">Java</span>
+                <span class="tag">Shell</span>
+                <span class="tag">SQL</span>
               </div>
             </div>
             <p>
-              Outil en ligne de commande pour automatiser les candidatures en alternance.
-              Fournissez l'URL d'une annonce : alt404 scrape l'offre, adapte la lettre
-              de motivation et le CV LaTeX via l'API Claude, compile les PDF et enregistre
-              la candidature dans une base SQLite locale. Export CSV/JSON, suivi des statuts.
+              Application de gestion de crise cyber avec monitoring, détection d'incidents,
+              solutions automatisées et reporting. Projet mené à trois, axé sur les notions
+              de PRA/PCA. Architecture Java avec backend, CLI et scripts de déploiement Shell.
             </p>
-            <p class="projet-note">Projet local / dépôt privé</p>
+            <a href="https://github.com/Kamga-Roland/CyberTrust" target="_blank" class="projet-link">Voir sur GitHub →</a>
+          </div>
+          
+          <div class="projet-card">
+            <div class="projet-header">
+              <h4>PenduCLI — Jeu du pendu en réseau</h4>
+              <div class="projet-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Sockets TCP</span>
+              </div>
+            </div>
+            <p>
+              TP d'introduction à l'infrastructure système et réseau : implémentation
+              d'un jeu du pendu multijoueur en ligne de commande, utilisant les sockets
+              TCP en Java. Architecture client/serveur, gestion des états de jeu.
+            </p>
+            <a href="https://github.com/Skarginson/PenduCLI" target="_blank" class="projet-link">Voir sur GitHub →</a>
           </div>
 
+          <div class="projet-card">
+            <div class="projet-header">
+              <h4>Sudoku SAT Solver</h4>
+              <div class="projet-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Logique formelle</span>
+                <span class="tag">MiniSat</span>
+              </div>
+            </div>
+            <p>
+              Résolution de grilles Sudoku par réduction à un problème de satisfiabilité
+              booléenne (SAT). La grille est encodée en formule CNF — contraintes par case,
+              ligne, colonne et bloc 3×3 — puis soumise à MiniSat. Zéro dépendance externe,
+              uniquement la bibliothèque standard Python.
+            </p>
+            <a href="https://github.com/Skarginson/sudokuSATSolver" target="_blank" class="projet-link">Voir sur GitHub →</a>
+          </div>
+
+          <div class="projet-card">
+            <div class="projet-header">
+              <h4>Promodex — Le Pokédex de la promo</h4>
+              <div class="projet-tags">
+                <span class="tag">Java / Spring Boot</span>
+                <span class="tag">Angular</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">CI/CD</span>
+              </div>
+            </div>
+            <p>
+              Projet CC2 EPISEN mené à trois : chaque élève de la promo devient une carte
+              à collectionner façon Pokédex, avec stats, type et super pouvoir générés
+              automatiquement. Backend Spring Boot + JPA/H2, frontend Angular avec galerie,
+              CRUD et mode booster (5 cartes révélées une par une). Pipeline CI/CD GitHub
+              Actions, couverture de tests ≥ 70 % (JUnit, Mockito, Playwright).
+            </p>
+            <a href="https://github.com/Skarginson/out-project-07" target="_blank" class="projet-link">Voir sur GitHub →</a>
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="projet-categorie">
+        <h3>Projets perso</h3>
+        <div class="projet-grid">
+          
+          <div class="projet-card">
+            <div class="projet-header">
+              <h4>Neon City Overdrive — Système FoundryVTT</h4>
+              <div class="projet-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Handlebars</span>
+                <span class="tag">CSS</span>
+                <span class="tag">i18n FR/EN</span>
+              </div>
+            </div>
+            <p>
+              Système JDR complet pour FoundryVTT adapté au TTRPG Neon City Overdrive.
+              Fiches personnage et PNJ entièrement fonctionnelles, mécanique de pool de
+              dés action/danger, gestion des Trademarks, Edges et Équipements, dialog de
+              jet de dés automatisé. Architecture modulaire ApplicationV2, internationalisation
+              FR/EN. 36 commits, première release beta publiée.
+            </p>
+            <a href="https://github.com/Skarginson/nco-foundryVTT" target="_blank" class="projet-link">Voir sur GitHub →</a>
+          </div>
+  
           <div class="projet-card">
             <div class="projet-header">
               <h4>Après l'accident</h4>
@@ -101,50 +181,9 @@
             </p>
             <a href="https://github.com/Skarginson/apreslaccident" target="_blank" class="projet-link">Voir sur GitHub →</a>
           </div>
-
+  
         </div>
       </div>
-
-      <div class="projet-categorie">
-        <h3>Projets scolaires / EPISEN</h3>
-        <div class="projet-grid">
-
-          <div class="projet-card">
-            <div class="projet-header">
-              <h4>CyberTrust / Gestion de crise cyber</h4>
-              <div class="projet-tags">
-                <span class="tag">Java</span>
-                <span class="tag">Shell</span>
-                <span class="tag">SQL</span>
-              </div>
-            </div>
-            <p>
-              Application de gestion de crise cyber avec monitoring, détection d'incidents,
-              solutions automatisées et reporting. Projet mené à trois, axé sur les notions
-              de PRA/PCA. Architecture Java avec backend, CLI et scripts de déploiement Shell.
-            </p>
-            <a href="https://github.com/Kamga-Roland/CyberTrust" target="_blank" class="projet-link">Voir sur GitHub →</a>
-          </div>
-
-          <div class="projet-card">
-            <div class="projet-header">
-              <h4>PenduCLI / Jeu du pendu en réseau</h4>
-              <div class="projet-tags">
-                <span class="tag">Java</span>
-                <span class="tag">Sockets TCP</span>
-              </div>
-            </div>
-            <p>
-              TP d'introduction à l'infrastructure système et réseau : implémentation
-              d'un jeu du pendu multijoueur en ligne de commande, utilisant les sockets
-              TCP en Java. Architecture client/serveur, gestion des états de jeu.
-            </p>
-            <a href="https://github.com/Skarginson/PenduCLI" target="_blank" class="projet-link">Voir sur GitHub →</a>
-          </div>
-
-        </div>
-      </div>
-
     </section>
 
     <footer>
