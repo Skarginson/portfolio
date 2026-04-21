@@ -26,7 +26,7 @@
 
           <div class="projet-card">
             <div class="projet-header">
-              <h4>Homelab — Infrastructure virtualisée</h4>
+              <h4>Homelab - Infrastructure virtualisée</h4>
               <div class="projet-tags">
                 <span class="tag">Proxmox</span>
                 <span class="tag">Linux</span>
@@ -39,7 +39,7 @@
               et réplication. Monitoring Grafana avec journaux centralisés, sauvegardes
               automatisées, durcissement OS et SSH sécurisé. Veille technique continue.
             </p>
-            <p class="projet-note">Projet local — dépôt privé</p>
+            <p class="projet-note">Projet local - dépôt privé</p>
           </div>
 
           <div class="projet-card">
@@ -56,20 +56,74 @@
               virtuelles : installation de paquets, durcissement SSH, configuration
               réseau, gestion des utilisateurs. Inventaires versionnés sous Git.
             </p>
-            <p class="projet-note">Projet local — dépôt privé</p>
+            <p class="projet-note">Projet local - dépôt privé</p>
           </div>
 
         </div>
       </div>
 
+            <div class="projet-categorie">
+        <h3>Cybersécurité</h3>
+        <div class="projet-grid">
+ 
+          <div class="projet-card">
+            <div class="projet-header">
+              <h4>Dual Boot Pwnagotchi / Ragnar</h4>
+              <div class="projet-tags">
+                <span class="tag">Raspberry Pi Zero 2 W</span>
+                <span class="tag">Pwnagotchi</span>
+                <span class="tag">Ragnar</span>
+                <span class="tag">Wi-Fi / Réseau</span>
+              </div>
+            </div>
+            <p>
+              Plateforme portable d'audit de sécurité sur Raspberry Pi Zero 2 W
+              avec écran e-ink Waveshare, configurée en dual boot. Côté offensif
+              Wi-Fi : Pwnagotchi capture passivement des handshakes WPA/WPA2 via
+              bettercap, guidé par un modèle de reinforcement learning (A2C) qui
+              optimise les captures en fonction de l'environnement. Côté audit
+              réseau : Ragnar effectue la découverte de cibles, l'identification de
+              ports ouverts et de services exposés, et la détection de
+              vulnérabilités potentielles. Le dual boot permet de basculer entre
+              les deux outils sur le même matériel, avec partitionnement dédié et
+              scripts de sélection au démarrage.
+            </p>
+            <span class="projet-link muted">Projet local - usage éthique en lab uniquement</span>
+          </div>
+ 
+          <div class="projet-card">
+            <div class="projet-header">
+              <h4>Honeypot &amp; IDS réseau - <em>à venir</em></h4>
+              <div class="projet-tags">
+                <span class="tag">Raspberry Pi</span>
+                <span class="tag">Suricata</span>
+                <span class="tag">Cowrie</span>
+                <span class="tag">Wazuh</span>
+              </div>
+            </div>
+            <p>
+              Projet prévu : déploiement d'un honeypot SSH/Telnet (Cowrie) et d'un
+              IDS réseau (Suricata) sur Raspberry Pi, avec remontée des alertes
+              vers un SIEM Wazuh hébergé sur le homelab Proxmox. Objectif :
+              constituer une chaîne de détection complète (capture réseau →
+              détection par signatures → corrélation SIEM → tableaux de bord
+              Grafana) et analyser les TTPs des attaquants en conditions réelles.
+            </p>
+            <span class="projet-link muted">En cours de préparation</span>
+          </div>
+ 
+        </div>
+      </div>
+
+
       
       <div class="projet-categorie">
-        <h3>Projets scolaires — EPISEN</h3>
+        <h3>Projets scolaires - EPISEN</h3>
         <div class="projet-grid">
 
           <div class="projet-card">
             <div class="projet-header">
-              <h4>CyberTrust — Gestion de crise cyber</h4>
+              <h4>CyberTrust - Gestion de crise cyber</h4>
               <div class="projet-tags">
                 <span class="tag">Java</span>
                 <span class="tag">Shell</span>
@@ -86,7 +140,7 @@
           
           <div class="projet-card">
             <div class="projet-header">
-              <h4>PenduCLI — Jeu du pendu en réseau</h4>
+              <h4>PenduCLI - Jeu du pendu en réseau</h4>
               <div class="projet-tags">
                 <span class="tag">Java</span>
                 <span class="tag">Sockets TCP</span>
@@ -111,8 +165,8 @@
             </div>
             <p>
               Résolution de grilles Sudoku par réduction à un problème de satisfiabilité
-              booléenne (SAT). La grille est encodée en formule CNF — contraintes par case,
-              ligne, colonne et bloc 3×3 — puis soumise à MiniSat. Zéro dépendance externe,
+              booléenne (SAT). La grille est encodée en formule CNF (contraintes par case,
+              ligne, colonne et bloc 3×3) puis soumise à MiniSat. Zéro dépendance externe,
               uniquement la bibliothèque standard Python.
             </p>
             <a href="https://github.com/Skarginson/sudokuSATSolver" target="_blank" class="projet-link">Voir sur GitHub →</a>
@@ -120,7 +174,7 @@
 
           <div class="projet-card">
             <div class="projet-header">
-              <h4>Promodex — Le Pokédex de la promo</h4>
+              <h4>Promodex - Le Pokédex de la promo</h4>
               <div class="projet-tags">
                 <span class="tag">Java / Spring Boot</span>
                 <span class="tag">Angular</span>
@@ -147,7 +201,7 @@
           
           <div class="projet-card">
             <div class="projet-header">
-              <h4>Neon City Overdrive — Système FoundryVTT</h4>
+              <h4>Neon City Overdrive - Système FoundryVTT</h4>
               <div class="projet-tags">
                 <span class="tag">JavaScript</span>
                 <span class="tag">Handlebars</span>
@@ -167,21 +221,47 @@
   
           <div class="projet-card">
             <div class="projet-header">
-              <h4>Après l'accident</h4>
+              <h4>Après l'accident - JDR solo en ligne</h4>
               <div class="projet-tags">
-                <span class="tag">JavaScript</span>
-                <span class="tag">Node.js</span>
-                <span class="tag">CSS</span>
+                <span class="tag">Next.js / React 19</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Tailwind / shadcn</span>
+                <span class="tag">Coolify</span>
               </div>
             </div>
             <p>
-              Interface web client/serveur pour jouer en solo au jeu de rôle narratif
-              "Après l'accident". Architecture séparée client/serveur, 26 commits,
-              à l'intersection du dev web et de ma passion pour le jeu de rôle.
+              Adaptation web du jeu de rôle solo "Après l'accident" (Neoludis, 2025),
+              réalisée avec l'accord de l'auteur. Application Next.js entièrement
+              côté client : persistance IndexedDB via Dexie, état global Zustand,
+              validation Zod, logique métier isolée dans un module pur sans dépendance
+              React, tests Vitest à 90 %+ sur le moteur de jeu.
+              Self-hosted sur mon homelab Proxmox via Coolify, exposé derrière
+              Nginx Proxy Manager.
             </p>
             <a href="https://github.com/Skarginson/apreslaccident" target="_blank" class="projet-link">Voir sur GitHub →</a>
+          </div>  
+
+          <div class="projet-card">
+            <div class="projet-header">
+              <h4>IPT Web - Générateur aléatoire JDR</h4>
+              <div class="projet-tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">React</span>
+                <span class="tag">Vite</span>
+                <span class="tag">Tailwind</span>
+              </div>
+            </div>
+            <p>
+              Réimplémentation navigateur du format .ipt (Inspiration Pad Pro),
+              utilisé par les MJ de JDR pour générer du contenu aléatoire (PNJ,
+              trésors, rencontres). Drag-and-drop de fichiers, références croisées
+              entre tables, support Windows-1252 pour les fichiers francophones, dark
+              mode, responsive. Zéro backend, zéro tracking, tout tourne côté client.
+              Parser framework-agnostic réutilisable hors React.
+            </p>
+            <a href="https://github.com/Skarginson/ipt-web" target="_blank" class="projet-link">Voir sur GitHub →</a>
           </div>
-  
+
         </div>
       </div>
     </section>
